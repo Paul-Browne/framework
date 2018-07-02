@@ -1,0 +1,196 @@
+/* resets */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+ol,
+ul,
+blockquote,
+address,
+blockquote,
+dl {
+    margin: 0;
+    font: inherit;
+    font-size: 100%;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+ol,
+ul {    
+    padding: 0 0 0 1rem;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    outline: 0;
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+}
+
+
+/* end resets */
+
+html {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Lora", serif;
+    color: #1f1f1f;
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: calc( 18px + 2 * (100vw - 400px) / 1520);
+    }
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3,
+strong,
+b {
+    font-weight: bold;
+}
+
+i,
+em {
+    font-style: italic
+}
+
+h1,
+h2,
+h3,
+h5,
+.h1,
+.h2,
+.h3,
+.h5,
+button,
+input,
+textarea,
+nav {
+    font-family: Roboto, sans-serif;
+}
+
+h1,
+.h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+h2,
+.h2 {
+    font-size: 1.5rem;
+    line-height: 1.15;
+}
+
+h3,
+.h3 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+h4,
+.h4 {
+    font-size: 1.125rem;
+}
+
+h5,
+.h5 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+small {
+    font-size: 75%;
+}
+
+sub,
+sup {
+    font-size: 66.66%;
+}
+
+sup {
+    vertical-align: top;
+}
+
+sub {
+    vertical-align: bottom;
+}
+
+q:before,
+blockquote:before {
+    quotes: "\201C""\201D""\2018""\2019";
+    content: open-quote;
+}
+
+q:after,
+blockquote:after {
+    quotes: "\201C""\201D""\2018""\2019";
+    content: close-quote;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+p,
+pre,
+ol,
+ul,
+blockquote,
+address,
+blockquote,
+dl {
+    margin-bottom: 1rem;
+}
+
+
+.drop-cap{
+    font-size: 2.75em;
+    float: left;
+    font-weight: bold;
+    padding-right: 0.5rem;
+    line-height: 0.8;
+    padding-top: 0.5rem;
+}

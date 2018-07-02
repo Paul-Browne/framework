@@ -1,0 +1,26 @@
+size			percentage		ratio		notes
+
+360 x 640		26.3%						modern Android phone in portrait, 540 x 960 @1.5 dpi, 720 x 1280 @ 2dpi, 900 x 1600 @2.5dpi, 1080 x 1920 @ 3dpi, 1440 x 2560 @4dpi, 2160 x 3840 @6dpi also iphone 6, 7 and 8 plus
+1920 x 1080		10.4%			16:9		full HD monitor/laptop
+1366 x 768		8.8%						generic 15.6" laptop (not full HD)
+375 x 667		4.8%						iphone 6, 7 and 8, in portrait
+1536 x 864		4%				16:9		full HD (zoomed in to 125%)
+412 x 732		3.7%						Nexus 5X, 6, 6P, Google Pixel, Pixel XL, in portrait
+768 x 1024		3.7%						ipad and many android tablets in portrait
+1280 x 800		3.2%			8:5			old monitors, some tablets
+1600 x 900		2.9%			16:9		Full HD (zoomed in to 120%) also older monitors, some laptops
+1440 x 900		2.6%			8:5			MacBook Pro, Air 13"
+320 x 568		2.4%						iphone 5, SE
+1280 x 720		2.2%						old monitors, some (fewer than 1280 x 800) tablets
+1680 x 1050		2.2%						
+1920 x 1200		1.7%
+414 x 736		1.5%
+412 x 823		1.3%
+1280 x 1024		1.2%						old monitors, very few tablets
+2560 x 1440		1%							large 27" monitors, high dpi
+360 x 740		1%							Samsung Galaxy Note 8, S8 and S8+
+412 x 846		0.9%						
+1024 x 768		0.8%						old monitors
+640 x 360		0.5%						modern Android phone in landscape
+
+				87.1%

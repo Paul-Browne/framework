@@ -1,0 +1,14 @@
+.bg-main {background: #93f;}
+.bg-secondary {background: #3cf;}
+.bg-gray {background: #999;}
+.bg-none {background: none;}
+
+.border-main {border-color: #93f;}
+.border-secondary {border-color: #3cf;}
+.border-gray {border-color: #999;}
+.border-none {border-color: rgba(0,0,0,0);}
+
+.color-main {color: #93f;}
+.color-secondary {color: #3cf;}
+.color-gray {color: #999;}
+.color-none {color: rgba(0,0,0,0);}
