@@ -65,79 +65,174 @@ textarea {
 }
 
 
-
-
 /* end resets */
 
 label {
-  display: inline-block;
-}
-
-input {
-    line-height: 40px;
-    height: 40px;
-    padding: 0 16px;
-    font-size: 16px;
-    border: 1px solid #999;
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-weight: 300;
     display: inline-block;
-    vertical-align: middle;
 }
 
-input.small {
-    height: 35px;
-    line-height: 35px;
-    font-size: 14px;
-    padding: 0 14px;
-}
-
-input.large {
-    height: 45px;
-    line-height: 45px;
-    font-size: 18px;
-    padding: 0 18px;
-}
-
-input.round {
-  border-radius: 0.3em;
-}
-
-span.prefix {
+input,
+label .prefix,
+label .suffix,
+label .label {
+    transition: .3s all;
     line-height: 40px;
     height: 40px;
     padding: 0 12px;
-    background: #ddd;
-    display: inline-block;
-    font-family: Roboto;
+    font-size: 16px;
     border: 1px solid #999;
     box-sizing: border-box;
-    border-right: 0;
+    font-weight: 400;
+    display: inline-block;
     vertical-align: middle;
-    font-size: 16px;
 }
 
-span.prefix.small{
-    line-height: 35px;
+
+input.rounded {
+    border-radius: 0.3rem;
+}
+
+input.rounded-left {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+input.rounded-right {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+input.pill {
+    border-radius: 9em;
+}
+
+input.pill-left {
+    border-radius: 9em 0 0 9em;
+}
+
+input.pill-right {
+    border-radius: 0 9em 9em 0;
+}
+
+
+label .prefix,
+label .suffix {
+    background: #eee;
+}
+
+label img.prefix,
+label img.suffix {
+    padding: 0.4rem;
+}
+
+label .prefix {
+    border-right: 0;
+}
+
+label .suffix {
+    border-left: 0;
+}
+
+input.small,
+label .prefix.small,
+label .suffix.small,
+label .label.small {
     height: 35px;
+    line-height: 35px;
     font-size: 14px;
     padding: 0 10px;
 }
 
-span.prefix.large{
-    line-height: 45px;
+input.large,
+label .prefix.large,
+label .suffix.large,
+label .label.large {
     height: 45px;
+    line-height: 45px;
     font-size: 18px;
     padding: 0 14px;
 }
 
-span.prefix.round {
-    border-radius: 0.3rem 0 0 0.3rem;
+label .label {
+    border: 0;
+    padding-left: 0 !important;
+}
+
+label .label.above {
+    display: block;
 }
 
 
-span.prefix + input.round {
-    border-radius: 0 0.3rem 0.3rem 0;
+label .checkbox,
+label .radio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background-size: contain;
+    margin-right: .5rem;
+    border: 2px solid #000;
 }
 
+label .radio {
+    border-radius: 50%;
+}
+
+label .checkbox.small,
+label .radio.small {
+    width: 15px;
+    height: 15px;
+}
+
+label .checkbox.large,
+label .radio.large {
+    width: 25px;
+    height: 25px;
+}
+
+label .checkbox.rounded {
+    border-radius: 20%;
+}
+
+
+label :focus+.checkbox,
+label :active+.checkbox,
+label :focus+.radio,
+label :active+.radio {
+    box-shadow: 0 0 1px 2px rgba(51, 102, 255, .5);
+}
+
+input:focus {
+    box-shadow: 0 0 4px 2px rgba(52, 102, 255, .5);
+    position: relative;
+    z-index: 22;
+}
+
+label :checked+.radio {
+    background-image: radial-gradient(#000 45%, #fff 50%);
+}
+
+label :checked+.checkbox {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTkuMTI1IDE5LjkwNkwyMi4wNjIgNi45N2wtMi4xNTYtMi4xNTYtMTAuNzgxIDEwLjc4LTUuMDMxLTUuMDMtMi4xNTcgMi4xNTZ6Ii8+PC9zdmc+);
+}
+
+
+[type=radio],
+[type=checkbox],
+[type=radio]:focus,
+[type=checkbox]:focus {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+
+form div {
+    margin: 1rem 0;
+    font-size: 0;
+}

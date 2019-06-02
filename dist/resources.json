@@ -1,0 +1,25 @@
+{
+    "form": [
+        "css/form.css"
+    ],
+    ".zebra": [
+        "css/table.css"
+    ],
+    ".btn": [
+        "css/button.css"
+    ],
+    ".js-custom-select": [
+        "js/custom-select.js",
+        "css/custom-select.css"
+    ],
+    "[data-object-fit]": [
+        "js/object-fit-polyfil.js"
+    ],
+    "pre code": [
+        "css/github-theme-syntax-highlighting.css",
+        "js/highlight.pack.js"
+    ],
+    "[data-include='header']" : [
+        "snippets/table.html"
+    ]
+}

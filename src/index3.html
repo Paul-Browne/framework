@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link rel="stylesheet" href="/css/grid-system.desktop.first.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/color.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,600|Roboto:300,400,700" >
+</head>
+
+<body>
+    <main class="main">
+
+        <section>
+            <div data-include="table"></div>
+        </section>
+
+        <section>
+            <div class="control">
+                <select class="" id="input-type-1">
+                    <option value="checkbox">checkbox</option>
+                    <option value="radio">radio</option>
+                </select>
+                <select class="" id="input-size-1">
+                    <option value="extra-small">extra-small</option>
+                    <option value="small">small</option>
+                    <option value="null" selected>default</option>
+                    <option value="large">large</option>
+                    <option value="extra-large">extra-large</option>
+                </select>
+                <select class="" id="input-style-1">
+                    <option value="null">default</option>
+                    <option value="rounded">rounded</option>
+                </select>
+                <select class="" id="input-font-style-1">
+                    <option value="null">default</option>
+                    <option value="serif">serif</option>
+                </select>
+                <select class="" id="input-font-weight-1">
+                    <option value="null">default</option>
+                    <option value="medium">medium</option>
+                    <option value="bold">bold</option>
+                </select>
+            </div>
+            <form>
+                <label>
+                    <input type="checkbox" id="output-1">
+                    <span class="checkbox"></span>
+                    <span class="label">Label</span>
+                </label>
+            </form>
+            <script type="text/javascript">
+                (function(){
+                    var output = document.getElementById("output-1");
+
+                    var inputType = document.getElementById("input-type-1");
+                    inputType.addEventListener("change", function(e) {
+                        output.type = e.target.value;
+                        output.nextElementSibling.classList.remove("checkbox");
+                        output.nextElementSibling.classList.remove("radio");
+                        output.nextElementSibling.classList.add(e.target.value);
+                    })
+
+
+                    var inputSize = document.getElementById("input-size-1");
+                    inputSize.addEventListener("change", function(e) {
+                        output.nextElementSibling.classList.remove("extra-small");
+                        output.nextElementSibling.classList.remove("small");
+                        output.nextElementSibling.classList.remove("large");
+                        output.nextElementSibling.classList.remove("extra-large");
+                        output.nextElementSibling.classList.add(e.target.value);
+                        output.nextElementSibling.classList.remove("null");
+
+                        output.nextElementSibling.nextElementSibling.classList.remove("extra-small");
+                        output.nextElementSibling.nextElementSibling.classList.remove("small");
+                        output.nextElementSibling.nextElementSibling.classList.remove("large");
+                        output.nextElementSibling.nextElementSibling.classList.remove("extra-large");
+                        output.nextElementSibling.nextElementSibling.classList.add(e.target.value);
+                        output.nextElementSibling.nextElementSibling.classList.remove("null");
+                    })
+
+                    var inputStyle = document.getElementById("input-style-1");
+                    inputStyle.addEventListener("change", function(e) {
+                        output.nextElementSibling.classList.remove("rounded");
+                        output.nextElementSibling.classList.add(e.target.value);
+                        output.nextElementSibling.classList.remove("null");
+                    })
+
+                    var inputFontStyle = document.getElementById("input-font-style-1");
+                    inputFontStyle.addEventListener("change", function(e) {
+                        output.nextElementSibling.nextElementSibling.classList.remove("serif");
+                        output.nextElementSibling.nextElementSibling.classList.add(e.target.value);
+                        output.nextElementSibling.nextElementSibling.classList.remove("null");
+                    })
+
+                    var inputFontWeight = document.getElementById("input-font-weight-1");
+                    inputFontWeight.addEventListener("change", function(e) {
+                        output.nextElementSibling.nextElementSibling.classList.remove("medium");
+                        output.nextElementSibling.nextElementSibling.classList.remove("bold");
+                        output.nextElementSibling.nextElementSibling.classList.add(e.target.value);
+                        output.nextElementSibling.nextElementSibling.classList.remove("null");
+                    })
+                })();
+            </script>
+        </section>
+
+        <section>
+            <div class="control">
+                <select class="" id="input-size-2">
+                    <option value="extra-small">extra-small</option>
+                    <option value="small">small</option>
+                    <option value="null" selected>default</option>
+                    <option value="large">large</option>
+                    <option value="extra-large">extra-large</option>
+                </select>
+                <select class="" id="input-style-2">
+                    <option value="null">default</option>
+                    <option value="rounded">rounded</option>
+                    <option value="rounded-left">rounded-left</option>
+                    <option value="rounded-right">rounded-right</option>
+                </select>
+                <select class="" id="btn-style-2">
+                    <option value="null">default</option>
+                    <option value="rounded">rounded</option>
+                    <option value="rounded-left">rounded-left</option>
+                    <option value="rounded-right">rounded-right</option>
+                </select>
+                <select class="" id="input-font-style-2">
+                    <option value="null">default</option>
+                    <option value="serif">serif</option>
+                </select>
+                <select class="" id="input-font-weight-2">
+                    <option value="null">default</option>
+                    <option value="medium">medium</option>
+                    <option value="bold">bold</option>
+                </select>
+                <select class="" id="label-placement-2">
+                    <option value="null">default</option>                    
+                    <option value="above">above</option>
+                </select>
+            </div>
+            <form>
+                <div>
+                    <label id="output-2">
+                        <span class="label">First Name: </span>
+                        <input type="text" placeholder="Placeholder">
+                    </label>
+                    <button class="btn bg-main">SUBMIT</button>
+                </div>
+            </form>
+
+
+            <script type="text/javascript">
+                (function(){
+                    var output = document.getElementById("output-2");
+
+                    var inputSize = document.getElementById("input-size-2");
+                    inputSize.addEventListener("change", function(e) {
+                        output.nextElementSibling.classList.remove("extra-small");
+                        output.nextElementSibling.classList.remove("small");
+                        output.nextElementSibling.classList.remove("large");
+                        output.nextElementSibling.classList.remove("extra-large");
+                        output.nextElementSibling.classList.add(e.target.value);
+                        output.nextElementSibling.classList.remove("null");
+
+                        output.children[0].classList.remove("extra-small");
+                        output.children[0].classList.remove("small");
+                        output.children[0].classList.remove("large");
+                        output.children[0].classList.remove("extra-large");
+                        output.children[0].classList.add(e.target.value);
+                        output.children[0].classList.remove("null");
+
+                        output.children[1].classList.remove("extra-small");
+                        output.children[1].classList.remove("small");
+                        output.children[1].classList.remove("large");
+                        output.children[1].classList.remove("extra-large");
+                        output.children[1].classList.add(e.target.value);
+                        output.children[1].classList.remove("null");
+
+                    })
+
+                    var inputStyle = document.getElementById("input-style-2");
+                    inputStyle.addEventListener("change", function(e) {
+                        output.children[1].classList.remove("rounded");
+                        output.children[1].classList.remove("rounded-left");
+                        output.children[1].classList.remove("rounded-right");
+                        output.children[1].classList.add(e.target.value);
+                        output.children[1].classList.remove("null");
+                    })
+
+                    var btnStyle = document.getElementById("btn-style-2");
+                    btnStyle.addEventListener("change", function(e) {
+                        output.nextElementSibling.classList.remove("rounded");
+                        output.nextElementSibling.classList.remove("rounded-left");
+                        output.nextElementSibling.classList.remove("rounded-right");
+                        output.nextElementSibling.classList.add(e.target.value);
+                        output.nextElementSibling.classList.remove("null");
+                    })
+
+                    var inputFontStyle = document.getElementById("input-font-style-2");
+                    inputFontStyle.addEventListener("change", function(e) {
+
+                        output.children[0].classList.remove("serif");
+                        output.children[0].classList.add(e.target.value);
+                        output.children[0].classList.remove("null");
+
+                        output.children[1].classList.remove("serif");
+                        output.children[1].classList.add(e.target.value);
+                        output.children[1].classList.remove("null");
+
+                        output.nextElementSibling.classList.remove("serif");
+                        output.nextElementSibling.classList.add(e.target.value);
+                        output.nextElementSibling.classList.remove("null");
+                    })
+
+                    var inputFontWeight = document.getElementById("input-font-weight-2");
+                    inputFontWeight.addEventListener("change", function(e) {
+                        output.children[0].classList.remove("medium");
+                        output.children[0].classList.remove("bold");
+                        output.children[0].classList.add(e.target.value);
+                        output.children[0].classList.remove("null");
+
+                        output.children[1].classList.remove("medium");
+                        output.children[1].classList.remove("bold");
+                        output.children[1].classList.add(e.target.value);
+                        output.children[1].classList.remove("null");
+
+                        output.nextElementSibling.classList.remove("medium");
+                        output.nextElementSibling.classList.remove("bold");
+                        output.nextElementSibling.classList.add(e.target.value);
+                        output.nextElementSibling.classList.remove("null");
+                    })
+
+                    var labelPlacement = document.getElementById("label-placement-2");
+                    labelPlacement.addEventListener("change", function(e) {
+
+                        output.children[0].classList.remove("above");
+                        output.children[0].classList.add(e.target.value);
+                        output.children[0].classList.remove("null");
+                    })
+
+                    
+                })();
+            </script>
+        </section>
+
+    </main>
+    <script src="/js/init-inc-resources.js"></script>
+</body>
+
+</html>

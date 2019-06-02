@@ -1,0 +1,1 @@
+!1 in document.documentElement.style&&document.documentElement.classList.add("no-object-fit");
