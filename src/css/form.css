@@ -1,80 +1,15 @@
-/* resets */
-
-fieldset,
-legend,
-input {
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
+form{
+    font-size: 0;
 }
 
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1;
-    margin: 0;
-}
-
-select {
-    text-transform: none;
-}
-
-legend {
-    box-sizing: border-box;
-    color: inherit;
-    display: table;
-    max-width: 100%;
-    white-space: normal;
-}
-
-progress {
-    vertical-align: baseline;
-}
-
-textarea {
-    overflow: auto;
-}
-
-[type="checkbox"],
-[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-}
-
-[type="search"] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px;
-}
-
-[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit;
-}
-
-
-/* end resets */
-
-label {
+label, input {
     display: inline-block;
 }
 
 input,
-label .prefix,
-label .suffix,
-label .label {
+.input-prefix,
+.input-suffix,
+.input-label{
     transition: .3s all;
     line-height: 40px;
     height: 40px;
@@ -88,53 +23,52 @@ label .label {
 }
 
 
-input.rounded {
+.rounded {
     border-radius: 0.3rem;
 }
 
-input.rounded-left {
+.rounded-left {
     border-radius: 0.3rem 0 0 0.3rem;
 }
 
-input.rounded-right {
+.rounded-right {
     border-radius: 0 0.3rem 0.3rem 0;
 }
 
-input.pill {
+.pill {
     border-radius: 9em;
 }
 
-input.pill-left {
+.pill-left {
     border-radius: 9em 0 0 9em;
 }
 
-input.pill-right {
+.pill-right {
     border-radius: 0 9em 9em 0;
 }
 
-
-label .prefix,
-label .suffix {
+.input-prefix,
+.input-suffix {
     background: #eee;
 }
 
-label img.prefix,
-label img.suffix {
+img.input-prefix,
+img.input-suffix {
     padding: 0.4rem;
 }
 
-label .prefix {
+.input-prefix {
     border-right: 0;
 }
 
-label .suffix {
+.input-suffix {
     border-left: 0;
 }
 
 input.small,
-label .prefix.small,
-label .suffix.small,
-label .label.small {
+.input-prefix.small,
+.input-suffix.small,
+.input-label.small {
     height: 35px;
     line-height: 35px;
     font-size: 14px;
@@ -142,27 +76,27 @@ label .label.small {
 }
 
 input.large,
-label .prefix.large,
-label .suffix.large,
-label .label.large {
+.input-prefix.large,
+.input-suffix.large,
+.input-label.large {
     height: 45px;
     line-height: 45px;
     font-size: 18px;
     padding: 0 14px;
 }
 
-label .label {
+.input-label {
     border: 0;
     padding-left: 0 !important;
 }
 
-label .label.above {
+.input-label.above {
     display: block;
 }
 
 
-label .checkbox,
-label .radio {
+.checkbox,
+.radio {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -173,31 +107,31 @@ label .radio {
     border: 2px solid #000;
 }
 
-label .radio {
+.radio {
     border-radius: 50%;
 }
 
-label .checkbox.small,
-label .radio.small {
+.checkbox.small,
+.radio.small {
     width: 15px;
     height: 15px;
 }
 
-label .checkbox.large,
-label .radio.large {
+.checkbox.large,
+.radio.large {
     width: 25px;
     height: 25px;
 }
 
-label .checkbox.rounded {
+.checkbox.rounded {
     border-radius: 20%;
 }
 
 
-label :focus+.checkbox,
-label :active+.checkbox,
-label :focus+.radio,
-label :active+.radio {
+:focus+.checkbox,
+:active+.checkbox,
+:focus+.radio,
+:active+.radio {
     box-shadow: 0 0 1px 2px rgba(51, 102, 255, .5);
 }
 
@@ -207,11 +141,11 @@ input:focus {
     z-index: 22;
 }
 
-label :checked+.radio {
+:checked+.radio {
     background-image: radial-gradient(#000 45%, #fff 50%);
 }
 
-label :checked+.checkbox {
+:checked+.checkbox {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTkuMTI1IDE5LjkwNkwyMi4wNjIgNi45N2wtMi4xNTYtMi4xNTYtMTAuNzgxIDEwLjc4LTUuMDMxLTUuMDMtMi4xNTcgMi4xNTZ6Ii8+PC9zdmc+);
 }
 
@@ -229,10 +163,4 @@ label :checked+.checkbox {
     position: absolute;
     width: 1px;
     white-space: nowrap;
-}
-
-
-form div {
-    margin: 1rem 0;
-    font-size: 0;
 }

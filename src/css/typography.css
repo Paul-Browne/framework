@@ -43,6 +43,7 @@ h6,
 .h6,
 button,
 input,
+[class*="input-"],
 label,
 textarea,
 nav {
