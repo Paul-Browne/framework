@@ -4,7 +4,6 @@
     }    
 
     function addOptions(el, newSelect){
-
         var newOptionsContainer = document.createElement("DIV");
         newOptionsContainer.classList.add("js-options-container");
         var option = el.children;
@@ -26,7 +25,8 @@
     }
 
     function addCurrentSelection (el, newSelect) {
-        var newCurrent = document.createElement("SPAN");
+        var newCurrent = document.createElement("BUTTON");
+        newCurrent.classList.add("btn");
         //newCurrent.setAttribute("tabindex", 0);
         newCurrent.innerHTML = el.children[el.selectedIndex].innerHTML;
 
@@ -51,15 +51,11 @@
     }
 
     function createSelect(el){
-
         var newSelect = document.createElement("DIV");
         newSelect.classList.add("js-select");
         insertAfter(newSelect, el);
-
         addCurrentSelection(el, newSelect);
-
         addOptions(el, newSelect);
-
     }
 
     var selects = document.querySelectorAll(".js-custom-select");

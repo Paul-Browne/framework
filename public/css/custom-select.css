@@ -1,0 +1,1 @@
+.js-select{position:relative}.js-select .js-options-container{display:none;position:absolute;top:0;left:0;flex-direction:column;margin-top:2rem;padding:.5rem 0;margin-bottom:0;border:1px solid rgba(0,0,0,.3)}.js-select .js-options-container span{padding:0 1rem}.js-select .js-options-container span:hover{background:#f2f2f2}.js-select.js-active .js-options-container{display:flex}

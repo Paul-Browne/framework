@@ -1,1 +1,0 @@
-.js-select{position:relative}.js-select .js-options-container{display:none;position:absolute;top:0;left:0;flex-direction:column;background:#eee;margin-top:2rem;margin-bottom:0}.js-select .js-options-container span:hover{background:red}.js-select.js-active .js-options-container{display:flex}
