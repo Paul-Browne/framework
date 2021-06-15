@@ -34,7 +34,7 @@
     "mkdirp": "^0.5.1",
     "net": "^1.0.2",
     "node-sass": "^4.12.0",
-    "postcss": "^7.0.17",
+    "postcss": "^7.0.36",
     "postcss-clean": "^1.1.0",
     "serve-static": "^1.14.1",
     "spdy": "^4.0.1",
